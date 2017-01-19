@@ -2,19 +2,25 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 	xmlns:local="clr-namespace:RegistrationForm.Pages" 
-	x:Class="RegistrationForm.Pages.RegistrationFormPage">
+	x:Class="RegistrationForm.Pages.RegistrationPage">
 	<TableView>
 		<TableRoot>
 			<TableSection Title="Profile">
 				<EntryCell Label="Username" Placeholder="who@are.you" Keyboard="Email" />
 				<ViewCell>
-					<StackLayout Padding="15,5,5,5" Orientation="Horizontal">
+					<StackLayout Padding="15,5,5,5">
+            <StackLayout.Orientation>
+              <OnPlatform x:TypeArguments="StackOrientation" iOS="Horizontal" Android="Horizontal" WinPhone="Vertical"/>
+            </StackLayout.Orientation>
 			            <Label Text="Password" />
 			            <Entry Text="" IsPassword="true" HorizontalOptions="FillAndExpand" />
 			          </StackLayout>
 				</ViewCell>
 				<ViewCell>
-					<StackLayout Padding="15,5,5,5" Orientation="Horizontal">
+					<StackLayout Padding="15,5,5,5">
+            <StackLayout.Orientation>
+              <OnPlatform x:TypeArguments="StackOrientation" iOS="Horizontal" Android="Horizontal" WinPhone="Vertical"/>
+            </StackLayout.Orientation>
 			            <Label Text="Confirm Password" />
 			            <Entry Text="" IsPassword="true" HorizontalOptions="FillAndExpand" />
 			          </StackLayout>
@@ -22,13 +28,19 @@
 				<EntryCell Label="First Name" Placeholder="sales@xamarin.com" Keyboard="Email" />
 				<EntryCell Label="Last Name" Placeholder="55" Keyboard="Numeric" />
 				<ViewCell>
-					<StackLayout Padding="15,5,5,5" Orientation="Horizontal">
+					<StackLayout Padding="15,5,5,5">
+            <StackLayout.Orientation>
+              <OnPlatform x:TypeArguments="StackOrientation" iOS="Horizontal" Android="Horizontal" WinPhone="Vertical"/>
+            </StackLayout.Orientation>
 			            <Label Text="Country" />
 			            <Picker />
 		          	</StackLayout>
 				</ViewCell>
 				<ViewCell>
-					<StackLayout Padding="15,5,5,5" Orientation="Horizontal">
+					<StackLayout Padding="15,5,5,5">
+            <StackLayout.Orientation>
+              <OnPlatform x:TypeArguments="StackOrientation" iOS="Horizontal" Android="Horizontal" WinPhone="Vertical"/>
+            </StackLayout.Orientation>
 			            <Label Text="Birth Date" />
 			            <DatePicker />
 		          	</StackLayout>

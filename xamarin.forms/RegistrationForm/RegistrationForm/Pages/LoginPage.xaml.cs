@@ -16,7 +16,7 @@ namespace RegistrationForm.Pages
 			var g = new TapGestureRecognizer();
 			g.Tapped += async (sender, e) =>
 			{
-				await Navigation.PushAsync(new RegistrationFormPage());
+				await Navigation.PushAsync(new RegistrationPage());
 			};
 			RegisterBtn.GestureRecognizers.Add(g);
 

@@ -2,9 +2,9 @@
 
 namespace RegistrationForm.Pages
 {
-	public partial class RegistrationFormPage : ContentPage
+	public partial class RegistrationPage : ContentPage
 	{
-		public RegistrationFormPage()
+		public RegistrationPage()
 		{
 			InitializeComponent();
 
