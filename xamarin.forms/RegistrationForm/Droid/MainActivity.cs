@@ -22,6 +22,8 @@ namespace RegistrationForm.Droid
 
 			global::Xamarin.Forms.Forms.Init(this, bundle);
 
+			FormsCommunityToolkit.Effects.Droid.Effects.Init();
+
 			LoadApplication(new App());
 		}
 	}
